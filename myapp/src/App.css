@@ -3,7 +3,7 @@
   margin: 0;
   }
   body{
-    height: 100vh;
+    height:inherit;
     background: linear-gradient(to top ,rgba(238, 165, 243, 0.473),rgb(243, 223, 239)) no-repeat;
   }
   .profiledetials{
