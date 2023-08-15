@@ -1,0 +1,206 @@
+*{
+  padding: 3px;
+  margin: 0;
+  }
+  body{
+    height: 100vh;
+    background: linear-gradient(to top ,rgba(238, 165, 243, 0.473),rgb(243, 223, 239)) no-repeat;
+  }
+  .profiledetials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .profiledetials a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: inherit;
+    padding: 30px;
+    flex-direction: column;
+    /* background: rgba(255, 192, 203, 0.616); */
+  }
+  .contents{
+    padding-left: 30px;
+  }
+  .image{
+    background: rgb(184, 143, 188);
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    /* padding: 5px; */
+  } 
+  img{
+    border-radius: 10px;
+    height:inherit;
+    background: #000;
+    padding: 0;
+  }
+  .Contentbody{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .repoCards{
+    margin: 10px;
+    background:linear-gradient(to top,rgba(243, 165, 227, 0.387),rgb(239, 209, 240));
+    /* background:rgba(243, 165, 227, 0.161); */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.188);
+    width: 350px;
+    height:200px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  header button{
+    background: linear-gradient(to top ,rgb(243, 129, 252),rgba(243, 165, 227, 0.912));
+    border: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px 13px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+  }
+  header a{
+    text-decoration: none;
+    
+  }
+  .Profilecontent{
+    /* text-align: center; */
+    margin: 30px;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    background: rgb(248, 219, 250);
+  }
+  header button:hover{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to top ,rgb(239, 107, 248),rgba(243, 143, 223, 0.912));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.132);
+  }
+  .repoCards h2{
+    font-variant: small-caps;
+    word-wrap: break-word;
+  }
+  .repoCards span{
+    position: relative;
+    top: 20px;
+    right: -140px;
+    /* border: 1px solid red; */
+    background: rgba(255, 255, 255, 0.141);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.227);
+    font-weight: 500;
+    padding: 2px 5px 4px 5px;
+  }
+  ul{
+    display: flex;
+    list-style: none; 
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+  li{
+    /* background-color: grey; */
+    margin: 5px;
+    padding: 3px 7px 5px 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .title{
+    text-align: center;
+    align-items: center;
+    font-variant:small-caps ;
+    border-bottom: 1px solid rgb(228, 15, 86);
+    margin: 50px;
+  }
+  .searchcontents input{
+    border: 1px solid black;
+    border-radius: 10px 0px 0px 10px;
+    width: 28vh;
+    font-weight: 600;
+    padding-left:  20px;
+    text-align: center;
+  }
+  .searchcontents button{
+    border: 1px solid black;
+    border-radius: 0px 10px 10px 0px;
+    width: 25vh;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+  }
+  .searchcontents button:hover{
+    background: rgba(252, 129, 190, 0.458);
+  }
+  .searchcontents input:focus{
+    font-weight: 600;
+    background: rgba(252, 129, 190, 0.458);
+    /* color: white; */
+    outline: none;
+  }
+  .searchcontents{
+    background: #e6a6d537;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .errormessage{
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: 500;
+    padding:40px;
+    color: red;
+  }
+  .Contentbody a{
+    text-decoration: none;
+    color: #000;
+  }
+  @media (max-width:670px) {
+    .profiledetials{
+      display: block;
+      padding: 0px;
+      text-align: left;
+    }
+    header{
+      display: block;
+      padding: 0px;
+      text-align: center;
+    }
+    header button{
+      margin: 20px;
+    }
+    .Profilecontent {
+      margin: 0px;
+    }
+    .image{
+      margin:10% auto;
+    }
+    .title{
+      margin: 30px 40px;
+    }
+    .repoCards span{
+      right: 0px;
+  
+    }
+    .searchcontents input{
+      width: 80%;
+      font-weight: 600;
+      border-radius: 10px;
+      padding-left:  20px;
+    }
+    .searchcontents button{
+      margin: 7px;
+      border-radius: 10px;
+      width: inherit;
+      padding: 5px 10px;
+      font-size:11.6px;
+    }
+      
+  
+  }
