@@ -29,7 +29,7 @@ function Bodycontent(props){
                         <h2>{x.name}</h2>
                         <h5>&nbsp;{x.description}</h5>
                         <Fectchlanguage link={x.languages_url}/>
-                        <span>{x.default_branch}</span>
+                        <span className="branch">{x.default_branch}</span>
                     </a>
                 )
             })

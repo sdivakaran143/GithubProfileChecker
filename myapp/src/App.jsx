@@ -4,7 +4,7 @@ import axios from "axios";
 import Maincontent from './components/Maincontent';
 
 function App() {
-  const [initialdata,setinitialdata]=useState(" ");
+  const [initialdata,setinitialdata]=useState("👆 Search The User With The Username");
   const [data,setdata]=useState([]);
   const [username,setusername]=useState("sdivakaran143");
   const [userdata,setuserdata]=useState();
@@ -25,7 +25,7 @@ function App() {
       }).catch(error=>{
           setstatus(false)
           console.log("error ocurred");
-         setinitialdata("Check_the_UserName_And_Try_Again")
+         setinitialdata("Check_the_UserName_Or_Try_Again_Later")
       })
   }
 

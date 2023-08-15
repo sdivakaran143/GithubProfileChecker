@@ -1,16 +1,24 @@
 *{
   padding: 3px;
   margin: 0;
-  }
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+}
   body{
     height:inherit;
-    background: linear-gradient(to top ,rgba(238, 165, 243, 0.473),rgb(243, 223, 239)) no-repeat;
+    min-height: 98.3vh;
+    background: linear-gradient(#ee9aa280,#F6CDD1,#efa2aa80) no-repeat;
   }
   .profiledetials{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
+    background: #fee9eb65;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.243);
+    margin: 15px;
+    border-radius: 20px;
   }
   .profiledetials a{
     text-decoration: none;
@@ -30,7 +38,7 @@
     padding-left: 30px;
   }
   .image{
-    background: rgb(184, 143, 188);
+    background: #ef7581c6;
     height: 200px;
     width: 200px;
     border-radius: 10px;
@@ -49,9 +57,9 @@
     justify-content: center;
   }
   .repoCards{
+    font-size: 90%;
     margin: 10px;
-    background:linear-gradient(to top,rgba(243, 165, 227, 0.387),rgb(239, 209, 240));
-    /* background:rgba(243, 165, 227, 0.161); */
+    background:linear-gradient(#f3dddfa8,#f3dddfa8,#ffc7c7a8);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.188);
     width: 350px;
     height:200px;
@@ -63,7 +71,7 @@
     border-radius: 10px;
   }
   header button{
-    background: linear-gradient(to top ,rgb(243, 129, 252),rgba(243, 165, 227, 0.912));
+    background: linear-gradient(to top ,#fee9eb79,#ffffff65);
     border: none;
     padding: 10px 15px 10px 15px;
     border-radius: 20px 13px;
@@ -79,11 +87,11 @@
     margin: 30px;
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
-    background: rgb(248, 219, 250);
+    /* background: rgb(248, 219, 250); */
   }
   header button:hover{
     color: rgb(255, 255, 255);
-    background: linear-gradient(to top ,rgb(239, 107, 248),rgba(243, 143, 223, 0.912));
+    background: linear-gradient(to top ,rgb(249, 166, 166),rgba(243, 143, 143, 0.912));
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.132);
   }
   .repoCards h2{
@@ -91,10 +99,10 @@
     word-wrap: break-word;
   }
   .repoCards span{
-    position: relative;
-    top: 20px;
-    right: -140px;
-    /* border: 1px solid red; */
+    position:relative;
+    top: 10px;
+    left: 140px;
+    /* border: 1px solid rgba(243, 165, 227, 0.841); */
     background: rgba(255, 255, 255, 0.141);
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.227);
@@ -121,6 +129,9 @@
     border-bottom: 1px solid rgb(228, 15, 86);
     margin: 50px;
   }
+  .searchcontents{
+    margin: auto 19%;
+  }
   .searchcontents input{
     border: 1px solid black;
     border-radius: 10px 0px 0px 10px;
@@ -137,34 +148,43 @@
     font-weight: 600;
   }
   .searchcontents button:hover{
-    background: rgba(252, 129, 190, 0.458);
+    background: #ef828d;
   }
   .searchcontents input:focus{
     font-weight: 600;
-    background: rgba(252, 129, 190, 0.458);
+    background: #ee9aa2c6;
     /* color: white; */
     outline: none;
   }
   .searchcontents{
-    background: #e6a6d537;
+    background: #f4616137;
     border-radius: 10px;
     text-align: center;
   }
   .errormessage{
     text-align: center;
     font-variant: small-caps;
-    font-weight: 500;
+    font-weight: 700;
     padding:40px;
     color: red;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.207);
   }
   .Contentbody a{
     text-decoration: none;
     color: #000;
   }
+
+  a:hover {
+    /* color: #2a89f6; */
+    transition: 0.4s;
+    scale: 1.05;
+    border: 2px solid rgb(251, 143, 161);
+  }
+
   @media (max-width:670px) {
     .profiledetials{
       display: block;
-      padding: 0px;
+      padding: 10px;
       text-align: left;
     }
     header{
@@ -186,7 +206,6 @@
     }
     .repoCards span{
       right: 0px;
-  
     }
     .searchcontents input{
       width: 80%;
